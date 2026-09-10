@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Páginas Antigas — uma livraria online para descobrir, solicitar e trocar livros.">
+    <title>Páginas Antigas | Livraria Online</title>
+
+    <!-- Biblioteca de efeitos visuais: AOS 2.3.1 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="header" id="inicio">
+        <div class="container header-container">
+            <a class="logo" href="#inicio" aria-label="Páginas Antigas - início">
+                <span class="logo-icon">📚</span>
+                <span>Páginas <strong>Antigas</strong></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <nav class="menu" id="menu" aria-label="Navegação principal">
+                <a href="#livros">Livros</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a class="btn btn-outline header-action" href="#contato">Solicitar livro</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-content" data-aos="fade-right">
+                    <span class="eyebrow">LEIA • COMPARTILHE • DESCUBRA</span>
+                    <h1>Histórias que continuam <span>mesmo depois da última página.</span></h1>
+                    <p>
+                        Encontre livros novos e usados, descubra clássicos e solicite aquele
+                        título que está faltando na sua estante.
+                    </p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#livros">Explorar livros</a>
+                        <a class="btn btn-ghost" href="#como-funciona">Como funciona →</a>
+                    </div>
+                    <div class="hero-stats" aria-label="Informações da loja">
+                        <div><strong>+50</strong><span>títulos</span></div>
+                        <div><strong>4,9/5</strong><span>avaliação</span></div>
+                        <div><strong>100%</strong><span>feito para leitores</span></div>
+                    </div>
+                </div>
+
+                <div class="hero-book" data-aos="fade-left" data-aos-delay="150">
+                    <div class="book-shadow"></div>
+                    <div class="book-cover">
+                        <span>📖</span>
+                        <small>UMA BOA HISTÓRIA</small>
+                        <strong>COMEÇA<br>COM UMA<br>PÁGINA.</strong>
+                        <em>Páginas Antigas</em>
+                    </div>
+                    <span class="floating-note note-one">✨ Clássicos</span>
+                    <span class="floating-note note-two">♡ Favoritos</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="livros section" id="livros">
+            <div class="container">
+                <div class="section-heading" data-aos="fade-up">
+                    <div>
+                        <span class="eyebrow">NOSSA SELEÇÃO</span>
+                        <h2>Encontre sua próxima leitura</h2>
+                    </div>
+                    <p>Use as categorias para encontrar um livro que combine com você.</p>
+                </div>
+
+                <div class="categoria-botoes" role="group" aria-label="Filtrar livros" data-aos="fade-up">
+                    <button class="categoria-btn active" data-filter="todos">Todos</button>
+                    <button class="categoria-btn" data-filter="classicos">Clássicos</button>
+                    <button class="categoria-btn" data-filter="tecnico">Técnico</button>
+                    <button class="categoria-btn" data-filter="infantil">Infantil</button>
+                    <button class="categoria-btn" data-filter="nao-ficcao">Não-ficção</button>
+                </div>
+
+                <div class="livros-grid" id="livros-grid">
+                    <article class="livro-card" data-categoria="classicos" data-aos="fade-up">
+                        <div class="livro-capa capa-azul"><span>📖</span><small>CLÁSSICO</small></div>
+                        <div class="livro-info">
+                            <span class="tag">Clássico</span>
+                            <h3>Dom Casmurro</h3>
+                            <p class="autor">Machado de Assis</p>
+                            <div class="livro-footer"><strong>R$ 35,00</strong><button class="btn-card" data-livro="Dom Casmurro">Solicitar</button></div>
+                        </div>
+                    </article>
+
+                    <article class="livro-card" data-categoria="classicos" data-aos="fade-up" data-aos-delay="80">
+                        <div class="livro-capa capa-laranja"><span>📚</span><small>CLÁSSICO</small></div>
+                        <div class="livro-info">
+                            <span class="tag">Clássico</span>
+                            <h3>O Cortiço</h3>
+                            <p class="autor">Aluísio Azevedo</p>
+                            <div class="livro-footer"><strong>R$ 28,00</strong><button class="btn-card" data-livro="O Cortiço">Solicitar</button></div>
+                        </div>
+                    </article>
+
+                    <article class="livro-card" data-categoria="tecnico" data-aos="fade-up" data-aos-delay="160">
+                        <div class="livro-capa capa-verde"><span>💻</span><small>TECNOLOGIA</small></div>
+                        <div class="livro-info">
+                            <span class="tag">Técnico</span>
+                            <h3>Código Limpo</h3>
+                            <p class="autor">Robert C. Martin</p>
+                            <div class="livro-footer"><strong>R$ 89,00</strong><button class="btn-card" data-livro="Código Limpo">Solicitar</button></div>
+                        </div>
+                    </article>
+
+                    <article class="livro-card" data-categoria="infantil" data-aos="fade-up" data-aos-delay="240">
+                        <div class="livro-capa capa-roxo"><span>✨</span><small>INFANTIL</small></div>
+                        <div class="livro-info">
+                            <span class="tag">Infantil</span>
+                            <h3>O Pequeno Príncipe</h3>
+                            <p class="autor">Antoine de Saint-Exupéry</p>
+                            <div class="livro-footer"><strong>R$ 42,00</strong><button class="btn-card" data-livro="O Pequeno Príncipe">Solicitar</button></div>
+                        </div>
+                    </article>
+
+                    <article class="livro-card" data-categoria="nao-ficcao" data-aos="fade-up" data-aos-delay="80">
+                        <div class="livro-capa capa-vermelho"><span>🌍</span><small>NÃO-FICÇÃO</small></div>
+                        <div class="livro-info">
+                            <span class="tag">Não-ficção</span>
+                            <h3>Sapiens</h3>
+                            <p class="autor">Yuval Noah Harari</p>
+                            <div class="livro-footer"><strong>R$ 65,00</strong><button class="btn-card" data-livro="Sapiens">Solicitar</button></div>
+                        </div>
+                    </article>
+
+                    <article class="livro-card" data-categoria="classicos" data-aos="fade-up" data-aos-delay="160">
+                        <div class="livro-capa capa-marrom"><span>📜</span><small>CLÁSSICO</small></div>
+                        <div class="livro-info">
+                            <span class="tag">Clássico</span>
+                            <h3>Memórias de Brás Cubas</h3>
+                            <p class="autor">Machado de Assis</p>
+                            <div class="livro-footer"><strong>R$ 32,00</strong><button class="btn-card" data-livro="Memórias de Brás Cubas">Solicitar</button></div>
+                        </div>
+                    </article>
+                </div>
+
+                <p class="empty-message" id="empty-message" hidden>Nenhum livro encontrado nessa categoria.</p>
+            </div>
+        </section>
+
+        <section class="como-funciona section-dark" id="como-funciona">
+            <div class="container">
+                <div class="section-heading light" data-aos="fade-up">
+                    <div>
+                        <span class="eyebrow">SIMPLES E RÁPIDO</span>
+                        <h2>Como funciona?</h2>
+                    </div>
+                    <p>Do primeiro clique até a sua próxima leitura.</p>
+                </div>
+
+                <div class="passos-grid">
+                    <article class="passo" data-aos="zoom-in">
+                        <span class="passo-numero">01</span>
+                        <h3>Explore</h3>
+                        <p>Conheça os livros disponíveis e filtre por categoria.</p>
+                    </article>
+                    <article class="passo" data-aos="zoom-in" data-aos-delay="100">
+                        <span class="passo-numero">02</span>
+                        <h3>Solicite</h3>
+                        <p>Escolha um título e preencha seus dados no formulário.</p>
+                    </article>
+                    <article class="passo" data-aos="zoom-in" data-aos-delay="200">
+                        <span class="passo-numero">03</span>
+                        <h3>Confirme</h3>
+                        <p>Receba a confirmação da solicitação pelo WhatsApp.</p>
+                    </article>
+                    <article class="passo" data-aos="zoom-in" data-aos-delay="300">
+                        <span class="passo-numero">04</span>
+                        <h3>Leia</h3>
+                        <p>Combine a entrega e aproveite sua nova história.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="depoimentos section" id="depoimentos">
+            <div class="container">
+                <div class="section-heading centered" data-aos="fade-up">
+                    <span class="eyebrow">QUEM JÁ PASSOU POR AQUI</span>
+                    <h2>Leitores contam suas experiências</h2>
+                </div>
+
+                <div class="depoimentos-grid">
+                    <article class="depoimento-card" data-aos="fade-up">
+                        <div class="rating">★★★★★</div>
+                        <p>“Encontrei um clássico que procurava há meses. O atendimento foi rápido e atencioso.”</p>
+                        <strong>Maria S.</strong><span>Leitora</span>
+                    </article>
+                    <article class="depoimento-card destaque" data-aos="fade-up" data-aos-delay="100">
+                        <div class="rating">★★★★★</div>
+                        <p>“Gostei muito da organização do catálogo. Foi fácil encontrar o livro que queria.”</p>
+                        <strong>João S.</strong><span>Leitor</span>
+                    </article>
+                    <article class="depoimento-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="rating">★★★★☆</div>
+                        <p>“Uma proposta simples e agradável para quem gosta de descobrir novas leituras.”</p>
+                        <strong>Ana C.</strong><span>Leitora</span>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario-secao" id="contato">
+            <div class="container contato-grid">
+                <div class="contato-copy" data-aos="fade-right">
+                    <span class="eyebrow">NÃO ENCONTROU O QUE QUERIA?</span>
+                    <h2>Conte qual livro você procura.</h2>
+                    <p>
+                        Preencha o formulário. Ao enviar, seus dados serão organizados
+                        em uma mensagem para confirmação pelo WhatsApp.
+                    </p>
+                    <div class="contact-detail">
+                        <span>✉</span>
+                        <div><strong>E-mail</strong><p>contato@paginasantigas.com</p></div>
+                    </div>
+                    <div class="contact-detail">
+                        <span>◷</span>
+                        <div><strong>Atendimento</strong><p>Segunda a sexta, 9h às 18h</p></div>
+                    </div>
+                </div>
+
+                <form class="formulario" id="form-solicitacao" data-aos="fade-left">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input type="text" id="nome" name="nome" required placeholder="Seu nome">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefone">Telefone</label>
+                            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="livro">Livro de interesse</label>
+                        <select id="livro" name="livro" required>
+                            <option value="">Selecione um livro</option>
+                            <option>Dom Casmurro</option>
+                            <option>O Cortiço</option>
+                            <option>Código Limpo</option>
+                            <option>O Pequeno Príncipe</option>
+                            <option>Sapiens</option>
+                            <option>Memórias de Brás Cubas</option>
+                            <option>Outro livro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem <span>(opcional)</span></label>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Escreva alguma observação..."></textarea>
+                    </div>
+                    <button class="btn btn-primary btn-enviar" type="submit">Enviar solicitação</button>
+                    <p class="form-feedback" id="form-feedback" role="status"></p>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <a class="logo footer-logo" href="#inicio"><span class="logo-icon">📚</span><span>Páginas <strong>Antigas</strong></span></a>
+                <p>Uma livraria online para quem acredita que boas histórias merecem continuar.</p>
+            </div>
+            <div>
+                <h3>Navegação</h3>
+                <a href="#livros">Livros</a>
+                <a href="#como-funciona">Como funciona</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </div>
+            <div>
+                <h3>Projeto</h3>
+                <p>Site desenvolvido com HTML, CSS e JavaScript.</p>
+                <p>Biblioteca visual: AOS 2.3.1.</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Páginas Antigas. Projeto acadêmico.</p>
+        </div>
+    </footer>
+
+    <button class="back-top" id="back-top" aria-label="Voltar ao topo">↑</button>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
