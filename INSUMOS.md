@@ -2,7 +2,7 @@
 
 ## 1. Referências da atividade
 
-O material da aula 2 sobre desenvolvimento de aplicações orienta a utilização de pesquisa, projeto, desenvolvimento em etapas e testes. Também recomenda registrar as referências e restrições utilizadas no arquivo de insumos.
+O material da aula 2 sobre desenvolvimento de aplicações orienta a utilização de pesquisa, projeto, desenvolvimento em etapas e testes. O professor disponibilizou material de exemplo para seguir, como fazer a documentação, insumos e os requisitos.
 
 ## 2. Referências visuais
 
