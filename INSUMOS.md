@@ -8,8 +8,8 @@ O material da aula 2 sobre desenvolvimento de aplicações orienta a utilizaçã
 
 Foram utilizadas como inspiração as referências citadas no material da disciplina:
 
-- **Skoob** referência para observar a organização de abertura e recursos, link do site: https://www.skoob.com.br
-- **Estante Virtual** referência para observar uma estética limpa, link do site: https://www.estantevirtual.com.br
+- **Skoob:** referência para observar a organização de abertura e recursos, link do site: https://www.skoob.com.br
+- **Estante Virtual:** referência para observar uma estética limpa, link do site: https://www.estantevirtual.com.br
 - **Blinkist:** referência para observar o uso de rolagem e animações em uma página de apresentação, link do site: https://www.blinkist.com
 
 As referências serviram apenas para observar organização e ideias de composição. O conteúdo, a identidade visual e os textos deste projeto foram produzidos especificamente para o site Páginas Antigas.
